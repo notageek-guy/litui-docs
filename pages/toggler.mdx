@@ -1,0 +1,22 @@
+import { Toggler } from "@manishxdev/litui";
+
+The `Toggler` component from `@manishxdev/litui` package provides a customizable toggle switch for interactive user interfaces.
+
+## Import
+
+To use the `Toggler` component, first, import it from the `@manishxdev/litui` package:
+
+```jsx
+import { Toggler } from "@manishxdev/litui";
+```
+
+## Examples
+
+```jsx
+function Example(){
+    const [open,setopen] = useState(false)
+    return <>
+    <Toggler isOn={open} handleToggle={() => setOpen(!open)} />
+    </Toggler>
+}
+```
