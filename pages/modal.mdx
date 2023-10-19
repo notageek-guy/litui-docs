@@ -1,0 +1,51 @@
+import { ModalExample } from "../components/examples";
+
+
+
+
+The Modal component is a UI element used to display content on top of an overlay, typically for purposes like displaying additional information, forms, or notifications. It provides a way to focus user attention on a specific task or piece of information without navigating away from the current page.
+
+## Import
+
+To import the Modal component in your project, you can import it via a package manager like npm or yarn.
+
+```jsx
+import { Modal } from "@manishxdev/litui";
+```
+
+## Props
+
+- `open` (boolean): Determines whether the modal is open or closed.
+- `onClose` (function): A callback function to handle the close event for the modal.
+- `config` (object): An object containing configuration options to change the default styles of the modal. It includes the following properties:
+
+  - `containerStyles` (object, optional): Custom styles for the modal container.
+  - `overlayStyles` (object, optional): Custom styles for the modal overlay (background).
+  - `closeButtonStyles` (object, optional): Custom styles for the modal close button.
+
+
+## Examples 
+```jsx 
+<Modal
+  open={isOpen}
+  onClose={handleClose}
+  config={{
+    containerStyles: {
+      // Custom container styles
+    },
+    overlayStyles: {
+      // Custom overlay styles
+    },
+    closeButtonStyles: {
+      // Custom close button styles
+    }
+  }}
+>
+  {/* Modal Content */}
+</Modal>
+
+```
+
+## Usage 
+
+<ModalExample />
